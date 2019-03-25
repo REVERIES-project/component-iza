@@ -1,0 +1,36 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+`component-iza`
+iza&#39;s first component
+
+@demo demo/index.html
+-->
+
+<dom-module id="component-iza">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+    <h3>My name is the super component and I will blow your mind away !</h3>
+    <h3>Try me and you'll see...</h3>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'component-iza',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'component-iza',
+        },
+      },
+
+    });
+  </script>
+</dom-module>
